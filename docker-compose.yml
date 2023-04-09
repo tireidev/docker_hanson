@@ -1,0 +1,10 @@
+version: '3'
+ 
+services:
+  nginx:
+    build: ./
+    image: hanson_nginx
+    ports:
+      - 8080:80
+    volumes:
+      - ./src:/usr/share/nginx/html
